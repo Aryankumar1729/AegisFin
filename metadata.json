@@ -1,0 +1,6 @@
+{
+  "name": "AegisFin — Enterprise Banking Customer Intelligence & Transaction Analytics",
+  "description": "Enterprise commercial banking intelligence, RFM behavioral customer segmentation, and high-velocity transaction analytics suite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
