@@ -39,3 +39,6 @@ dist/
 # Large Raw Datasets (uncompressed)
 # Keep sample/processed CSVs committed if needed
 # data/raw/*.csv
+
+# Local Docs
+interview_prep.md
