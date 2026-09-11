@@ -100,13 +100,6 @@ export const ExecutiveDashboard: React.FC<Props> = ({ kpis, monthlyTrends, locat
 
           <div className="flex items-center gap-3 shrink-0">
             <button
-              onClick={() => onNavigateTab?.("sql")}
-              className="px-4 py-2.5 bg-slate-800 hover:bg-slate-750 text-slate-200 hover:text-white rounded-xl text-xs font-mono font-semibold border border-slate-700 transition-all shadow-sm flex items-center gap-2"
-            >
-              <span>Query Studio</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
-            <button
               onClick={() => onNavigateTab?.("rfm")}
               className="px-4 py-2.5 bg-gradient-to-r from-sky-600 to-indigo-600 hover:from-sky-500 hover:to-indigo-500 text-white rounded-xl text-xs font-mono font-semibold transition-all shadow-lg shadow-sky-600/20 flex items-center gap-2"
             >
@@ -264,15 +257,6 @@ export const ExecutiveDashboard: React.FC<Props> = ({ kpis, monthlyTrends, locat
             </table>
           </div>
 
-          <div className="pt-2 text-right">
-            <button
-              onClick={() => onNavigateTab?.("sql")}
-              className="text-xs font-mono text-sky-400 hover:text-sky-300 font-semibold inline-flex items-center gap-1 transition-colors"
-            >
-              <span>View SQL Trend Scripts</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
-            </button>
-          </div>
         </div>
       </div>
 

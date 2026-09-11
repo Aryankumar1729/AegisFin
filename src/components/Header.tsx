@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { 
   ShieldCheck, 
   Layers, 
-  Terminal, 
   BarChart3, 
   FileSpreadsheet, 
   Cpu, 
@@ -38,7 +37,6 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => 
       group: "SPATIAL & QUERY STUDIO",
       items: [
         { id: "geographic", label: "Metropolitan Matrix", icon: Activity, badge: "16 Hubs" },
-        { id: "sql", label: "Live SQL Studio", icon: Terminal, badge: "WASM" },
       ]
     },
     {

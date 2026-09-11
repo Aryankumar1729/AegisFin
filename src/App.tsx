@@ -3,11 +3,10 @@ import { Sidebar, TopHeader } from "./components/Header";
 import { ExecutiveDashboard } from "./components/ExecutiveDashboard";
 import { RFMExplorer } from "./components/RFMExplorer";
 import { RiskCohortAnalytics } from "./components/RiskCohortAnalytics";
-import { SQLRunner } from "./components/SQLRunner";
 import { GeographicAnalytics } from "./components/GeographicAnalytics";
 import { TableauSpecs } from "./components/TableauSpecs";
 import { DataQualityPipeline } from "./components/DataQualityPipeline";
-import { kpiData, monthlyTrendData, rfmSegmentData, geographicData, sqlFilesData } from "./data/mockData";
+import { kpiData, monthlyTrendData, rfmSegmentData, geographicData } from "./data/mockData";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>("overview");
@@ -39,7 +38,6 @@ export default function App() {
             )}
             {activeTab === "rfm" && <RFMExplorer rfmSegments={rfmSegmentData} />}
             {activeTab === "risk" && <RiskCohortAnalytics />}
-            {activeTab === "sql" && <SQLRunner sqlFiles={sqlFilesData} />}
             {activeTab === "geographic" && <GeographicAnalytics locations={geographicData} />}
             {activeTab === "tableau" && <TableauSpecs />}
             {activeTab === "pipeline" && <DataQualityPipeline />}
